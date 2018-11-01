@@ -33,7 +33,7 @@ void Quicksort_Cilk( int *a, int n, int p){
 	__cilkrts_end_cilk();
 	
 	if (0!= __cilkrts_set_param("nworkers",WORKERS)) {
-    printf("Failed to set worker count: %s \nYou can not have this number of workers \n", WORKERS);
+    printf("Failed to set worker count: %s \nYou can not have this number of workers \nThe variable has been set to the previous accepted value or to the optimal value\n", WORKERS);
   }
 
 
