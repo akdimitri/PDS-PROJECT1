@@ -33,7 +33,7 @@ void Quicksort_Cilk( int *a, int n, int p){
 	__cilkrts_end_cilk();
 	
 	if (0!= __cilkrts_set_param("nworkers",WORKERS)) {
-    printf("Failed to set worker count: %s \n Your CPU does not support it \n", WORKERS);
+    printf("Failed to set worker count: %s \nYour CPU can not set this number of workers \n", WORKERS);
   }
 
 
