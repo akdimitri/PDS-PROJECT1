@@ -1,5 +1,5 @@
 # PDS-PROJECT1
-***Dimitris Antonidis***
+***Dimitris Antoniadis***
 ***akdimitri@auth.gr***
 
 ---Parallel and Distributed Systems---
