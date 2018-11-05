@@ -17,7 +17,7 @@
 struct ARGUMENT{
 	int *v; 			//pointer to the start of the Array of integers
 	int n;				//size o Array v
-	int height;			//height of threads recursion
+	int height;			//height = level of threads recursion
 };
 
 
@@ -31,7 +31,7 @@ void *Quicksort( void *_ARGUMENT){
 	
 	struct ARGUMENT _ARGUMENT_PASSED = *((struct ARGUMENT *) _ARGUMENT);
 	
-	/* If level 0 has not been reached create a new thread */
+	/* If height/level 0 has not been reached create a new thread */
 	if( _ARGUMENT_PASSED.height != 0 && _ARGUMENT_PASSED.n > 50){
 		
 		struct ARGUMENT _ARGUMENT_1, _ARGUMENT_2;
@@ -112,7 +112,7 @@ int my_partition ( int *v, int n) {
 		swap(v, i, n - 2);
 		return (i);
 	}
-	else{
+	else{	//simple partition
 		int pivot = v[n-1];
 		int i = 0;
 		  
