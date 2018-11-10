@@ -15,6 +15,7 @@
 /* qsortseq -- Sort vector v (of length n) using QuickSort */
 void qsort_seq(int *v, int n);
 void swap(int *v, int k, int l);
+int partition(int *v, int n);
 #endif /* _QSORT-SEQUENTIAL_H_ */
 
 
