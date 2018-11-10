@@ -282,10 +282,10 @@ int main(int argc, char **argv) {
 int test(int *a, int n) {
 	int i;
 
-	int pass = 0; //assign pass a positive value
+	int pass = 1; //assign pass a positive value
 	for(i = 0; i < n - 1; i++){
-		if( ! ( a[i] < a[i+1])){
-			int pass = 1;
+		if( ! ( a[i] <= a[i+1])){
+			int pass = 0;
 			return pass; //exit test.
 		}
 	}
