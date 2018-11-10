@@ -36,7 +36,7 @@ void *Quicksort( void *_ARGUMENT){
 		
 		struct ARGUMENT _ARGUMENT_1, _ARGUMENT_2;
 		
-		int p = my_partition( _ARGUMENT_PASSED.v, _ARGUMENT_PASSED.n);
+		int p = partition( _ARGUMENT_PASSED.v, _ARGUMENT_PASSED.n);
 		
 		
 		_ARGUMENT_1.v = _ARGUMENT_PASSED.v;
@@ -83,7 +83,7 @@ void Quicksort_Parallel( int *v, int n, int p){
 /* median of three -- picks the 1st the last and the middle element of
 an Array, compares them and places them sorted in the 1st the last and the pivot is placed
 in place n-2.*/
-void median_of_three( int *v, int n){
+/*void median_of_three( int *v, int n){
 	int center = (n-1)/2;
 	if( v[center] < v[0])
 		swap( v, 0, center);
@@ -126,4 +126,4 @@ int my_partition ( int *v, int n) {
 	}
 }
 
-
+*/
